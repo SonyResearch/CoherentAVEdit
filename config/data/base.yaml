@@ -1,0 +1,70 @@
+VGGSound:
+  root: /group2/ct/m-ishii/migrated_rex/data/video
+  subset_name: sets/vgg3-train.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+VGGSound_test:
+  root: /group2/ct/m-ishii/migrated_rex/data/video
+  subset_name: /group2/ct/rex/data/cache3/v1-16-memmap/vgg-test.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+VGGSound_val:
+  root: /group2/ct/m-ishii/migrated_rex/data/video
+  subset_name: /group2/ct/rex/data/cache3/v1-16-memmap/vgg-val.tsv
+  fps: 8
+  height: 384
+  width: 384
+  sample_duration_sec: 8.0
+
+ExtractedVGG:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-train.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-train
+
+ExtractedVGG_test:
+  tag: test
+  gt_cache: /group2/ct/m-ishii/migrated_rex/data/cache3/eval-test-v2/
+  output_subdir: null
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-test.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-test
+
+ExtractedVGG_val:
+  tag: val
+  gt_cache: /group2/ct/m-ishii/migrated_rex/data/cache3/eval-val-v2/
+  output_subdir: val
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-val.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/vgg-val
+
+AudioCaps:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/audiocaps.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/audiocaps
+
+AudioSetSL:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/audioset_sl.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/audioset_sl
+
+BBCSound:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/bbcsound.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/bbcsound
+
+FreeSound:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/freesound.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/freesound
+
+Clotho:
+  tsv: /group2/ct/m-ishii/data_mmap/features_w_loudness/clotho.tsv
+  memmap_dir: /group2/ct/m-ishii/data_mmap/features_w_loudness/clotho
+
+Example_video:
+  tsv: ./training/example_output/memmap/vgg-example.tsv
+  memmap_dir: ./training/example_output/memmap/vgg-example
+
+Example_audio:
+  tsv: ./training/example_output/memmap/audio-example.tsv
+  memmap_dir: ./training/example_output/memmap/audio-example
+  
